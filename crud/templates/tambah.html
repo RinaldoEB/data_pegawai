@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Aplikasi Kepegawaian</title>
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         window.onload = async function () {
             // Anda bisa menambahkan kode lain yang diperlukan di sini
@@ -92,11 +93,15 @@
                     <label>Gaji:</label>
                     <input type="number" name="gaji" class="form-control" placeholder="Masukan gaji" required>
                 </div>
+                <div class="form-group">
+                    <label for="formFile" class="form-label">Upload Foto</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
             </div>
 
             <!-- Bagian Tombol Simpan dan Batal -->
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>    
                 <a href="index.html" class="btn btn-secondary">Batal</a>
             </div>
         </form>
